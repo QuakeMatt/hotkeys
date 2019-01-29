@@ -29,10 +29,14 @@ return
 
 ; Task view
 XButton1::
-Send #{Tab}
+Send, !^{Tab}
+KeyWait, XButton1
+MouseClick, Left
 return
 
 ; Task view
 XButton2::
-Send #{Tab}
+Send, !^{Tab}
+KeyWait, XButton2
+MouseClick, Left
 return
