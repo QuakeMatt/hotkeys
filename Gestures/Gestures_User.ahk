@@ -64,6 +64,9 @@ Gesture_L:
 	else if WinActive("- Sublime Text") {
 		Send !{Left}
 	}
+	else if WinActive("- Visual Studio Code") {
+		Send ^{PgUp}
+	}
 	else if WinActive("- (Microsoft )?Visual C\+\+") {
 		Send ^-
 	}
@@ -90,6 +93,9 @@ Gesture_R:
 	}
 	else if WinActive("- Sublime Text") {
 		Send !{Right}
+	}
+	else if WinActive("- Visual Studio Code") {
+		Send ^{PgDn}
 	}
 	else if WinActive("- (Microsoft )?Visual C\+\+") {
 		Send ^+-
@@ -254,6 +260,9 @@ Gesture_U_D:
 		Send ^+t
 	}
 	else if WinActive("- Sublime Text") {
+		Send ^+t
+	}
+	else if WinActive("- Visual Studio Code") {
 		Send ^+t
 	}
 return
