@@ -61,6 +61,9 @@ Gesture_L:
 	if WinActive("ahk_group ^Explorer$") {
 		Send !{Left}
 	}
+	else if WinActive("- PhpStorm") {
+		Send !{Left}
+	}
 	else if WinActive("- Sublime Text") {
 		Send !{Left}
 	}
@@ -89,6 +92,9 @@ return
 Gesture_R:
 	SetTitleMatchMode, RegEx
 	if WinActive("ahk_group ^Explorer$") {
+		Send !{Right}
+	}
+	else if WinActive("- PhpStorm") {
 		Send !{Right}
 	}
 	else if WinActive("- Sublime Text") {
@@ -131,6 +137,9 @@ Gesture_U:
 	else if WinActive("ahk_class OperaWindowClass") {
 		Send !{home}
 	}
+	else if WinActive("- PhpStorm") {
+		Send !^+{insert}
+	}
 	else {
 		Send ^n
 	}
@@ -159,6 +168,9 @@ Gesture_D:
 	}
 	else if WinActive("ahk_class FM") {
 		Send !{F4}
+	}
+	else if WinActive("- PhpStorm") {
+		Send ^{F4}
 	}
 	else if WinActive("- Notepad2") {
 		Send !{F4}
@@ -258,6 +270,9 @@ Gesture_U_D:
 	}
 	else if WinActive("ahk_class OperaWindowClass") {
 		Send ^+t
+	}
+	else if WinActive("- PhpStorm") {
+		Send !+e
 	}
 	else if WinActive("- Sublime Text") {
 		Send ^+t
