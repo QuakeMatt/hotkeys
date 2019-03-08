@@ -21,6 +21,7 @@ Scripts := [ ; Additional Startup Scripts Can Be Added Between the ( Continuatio
 (Join,
 "Scripts\Bundle.ahk"
 "Scripts\EasyWindowDrag.ahk"
+"Scripts\QuakeConsole.ahk"
 "Gestures\Gestures.ahk"
 )]
 
