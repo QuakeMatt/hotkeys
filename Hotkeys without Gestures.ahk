@@ -16,14 +16,11 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance force  ; Ensures that only the last executed instance of script is running
 
-Scripts := [	; Additional Startup Scripts Can Be Added Between the ( Continuations  ) Below
+Scripts := [ ; Additional Startup Scripts Can Be Added Between the ( Continuations  ) Below
 (Join,
-"Scripts\AlwaysOnTop.ahk"
-"Scripts\ColourPicker.ahk"
+"Scripts\Bundle.ahk"
 "Scripts\EasyWindowDrag.ahk"
-"Scripts\GoToAnything.ahk"
-"Scripts\Remapping.ahk"
-"Scripts\PlainPaste.ahk"
+"Scripts\QuakeConsole.ahk"
 )]
 
 Startup := {}
