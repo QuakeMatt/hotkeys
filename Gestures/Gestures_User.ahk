@@ -129,7 +129,7 @@ Gesture_U:
 	else if WinActive("ahk_class MozillaWindowClass") {
 		Send !{home}
 	}
-	else if WinActive("ahk_class Chrome_WidgetWin_1") {
+	else if WinActive("- Google Chrome") {
 		SendEvent !d
 		Clip("https://www.google.co.uk/")
 		Send {enter}
@@ -160,7 +160,7 @@ Gesture_D:
 	else if WinActive("ahk_class MozillaWindowClass") {
 		SendEvent ^w
 	}
-	else if WinActive("ahk_class Chrome_WidgetWin_1") {
+	else if WinActive("- Google Chrome") {
 		SendEvent ^w
 	}
 	else if WinActive("ahk_class OperaWindowClass") {
@@ -200,7 +200,7 @@ Gesture_U_L:
 	else if WinActive("ahk_class MozillaWindowClass") {
 		Send ^t
 	}
-	else if WinActive("ahk_class Chrome_WidgetWin_1") {
+	else if WinActive("- Google Chrome") {
 		Send ^t
 	}
 	else if WinActive("ahk_class OperaWindowClass") {
@@ -234,7 +234,7 @@ Gesture_U_R:
 		Sleep 13
 		SendEvent !{enter}
 	}
-	else if WinActive("ahk_class Chrome_WidgetWin_1") {
+	else if WinActive("- Google Chrome") {
 		SendEvent {Alt down}d{Alt up}
 		Clip("https://www.google.co.uk/")
 		SendEvent {Alt down}{enter}{Alt up}
@@ -265,7 +265,7 @@ Gesture_U_D:
 	else if WinActive("ahk_class MozillaWindowClass") {
 		Send ^+t
 	}
-	else if WinActive("ahk_class Chrome_WidgetWin_1") {
+	else if WinActive("- Google Chrome") {
 		Send ^+t
 	}
 	else if WinActive("ahk_class OperaWindowClass") {
@@ -306,7 +306,7 @@ Gesture_D_L:
 		Send {raw}about:newtab
 		Send {enter}
 	}
-	else if WinActive("ahk_class Chrome_WidgetWin_1") {
+	else if WinActive("- Google Chrome") {
 		SendEvent {Alt down}d{Alt up}
 		Clip("chrome://newtab")
 		SendEvent {enter}
