@@ -4,13 +4,13 @@
 
 ; Next event
 
-XButton2::
+XButton1::
 Send {Space}
 return
 
 
-; Focus event
+; Next event
 
-XButton1::
-Send f
+XButton2::
+Send {Space}
 return
