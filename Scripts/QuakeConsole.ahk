@@ -39,7 +39,7 @@ SetWinDelay, -1
 ; Configures and initialises the script
 ; ----------------------------------------------------------
 
-CONSOLE_PATH := "%WINDIR%\system32\windowspowershell\v1.0\powershell.exe"
+CONSOLE_PATH := "%ProgramW6432%\PowerShell\7\pwsh.exe"
 CONSOLE_ARGS := ""
 CONSOLE_START_DIR := "%USERPROFILE%\Documents"
 
@@ -177,7 +177,7 @@ EaseFn(t)
 
 HideWhenInactive:
 	If (!WinActive("ahk_pid" console_pid)) {
-		last_active_id := 0		
+		last_active_id := 0
 		if (WinExist("ahk_pid" console_pid)) {
 			ToggleConsole("out")
 		}
