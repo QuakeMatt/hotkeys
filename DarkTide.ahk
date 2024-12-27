@@ -26,10 +26,10 @@ return
 
 $Space::
 
-    Send {Space Down}
-
     if (GetKeyState("A") + GetKeyState("S") + GetKeyState("D"))
     {
+        Send {# Down}
+
         SpaceHeld := false
         HoldUntil := A_TickCount + 200
 
@@ -44,8 +44,14 @@ $Space::
             KeyWait, Space
             Send {Ctrl Up}
         }
-    }
 
-    Send {Space Up}
+        Send {# Up}
+    }
+    else
+    {
+        Send {Space Down}
+        KeyWait, Space
+        Send {Space Up}
+    }
 
 return
